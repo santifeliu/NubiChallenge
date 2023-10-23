@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  django.nubi:
+    hostname: django-nubi
+    build:
+      context: .
+      dockerfile: ./compose/django/Dockerfile
+    image: nubi_django
+    volumes:
+      - .:/app
+    env_file:
+      - ./.envs/.django
+    ports:
+      - "8000:8000"
+    command: /start
