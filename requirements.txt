@@ -19,4 +19,4 @@ django-cors-headers==3.9.0
 pytz==2020.1
 
 # Django filter
-django-filter
+django-filter=23.3

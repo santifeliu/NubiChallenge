@@ -8,7 +8,7 @@ from django.db import models
 
 
 class User(models.Model):
-    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    wallet_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
